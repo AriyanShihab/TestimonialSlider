@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main: rgb(0, 255, 255);
+    --wrpper: #010f2a;
+    --card: #01153d;
+    --text: rgb(244, 243, 255);
+    --btn-text: #01153d;
+}
+
+[data-theme="light"] {
+    --wrpper: rgb(240, 239, 239);
+    --card: #fff;
+    --main: rgb(136, 102, 236);
+    --text: rgb(3, 1, 42);
+    --btn-text: #ffffff;
+}
+
+
+/* intro start */
+
+.intro {
+    border: 1px dashed var(--main);
+    min-width: 70vw!important;
+    padding: 10px;
+}
+
+.intro-card {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.intro-card h3 {
+    font-size: 28px;
+    text-align: center;
+    margin: 15px 0;
+    color: var(--text);
+}
+
+.intro-card h3 span {
+    color: var(--main);
+    display: block;
+}
+
+
+/* entro end */
+
+#wrapper {
+    background-color: var(--wrpper);
+    padding: 20px;
+    min-height: 100vh;
+    max-width: 100%!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    max-width: 1040px;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .card {
+    flex: 1;
+}
+
+
+/* testimonial cards */
+
+.card {
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--card);
+    margin: 10px;
+}
+
+.image img {
+    height: 100px;
+    width: 100px!important;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.name h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: var(--main);
+}
+
+.text p {
+    color: var(--text);
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li i {
+    font-size: 22px;
+    color: var(--main);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+/* defult button */
+
+button {
+    background-color: var(--main);
+    color: var(--btn-text);
+    padding: 8px 20px;
+    border-radius: 2px;
+    font-weight: bold;
+    margin: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+.footer {
+    padding: 30px 10px;
+    background-color: var(--main);
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 16px;
+    color: var(--btn-text);
+}
+
+.footer h3 a {
+    text-decoration: none;
+}
